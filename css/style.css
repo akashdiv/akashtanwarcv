@@ -1,0 +1,171 @@
+body{font-family: 'Poppins', sans-serif;}
+
+h1, h2,h3, h4, h5, h6{font-family: 'Playfair Display', serif;}
+
+
+.header-bg{
+    background: #ffdd40;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.header-bg h1{
+    font-size: 52px;
+}
+
+.header-bg p{
+    font-size: 18px;
+}
+
+.img-bg{
+    position: relative;
+}
+
+.img-bg::before{
+    content: "";
+    display: block;
+    background: #ffdd40;
+    height: 20vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about-me{
+    padding: 80px 0 50px;
+}
+
+.about-me h2{
+    margin-bottom: 20px;
+}
+
+.about-me p{
+    margin-bottom: 20px;
+}
+
+.about-me .custom-btn{
+    border: 2px solid #000;
+    width: 100%;
+}
+
+.about-me .custom-btn-cv{
+    border: 2px solid #000;
+    width: 100%;
+    background: #000;
+    color: #fff;
+}
+
+.exper-frame .framework{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.exper-frame .framework li{
+    width: calc(33% - 15px);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+}
+
+.exper-frame .framework li:hover{
+    border: 0;
+    box-shadow: 0px 8px 30px rgb(118 85 225 / 15%);
+}
+
+.exper-frame .framework li .lang-box img{
+    max-height: 60px;
+    filter: grayscale(100%);
+}
+
+.exper-frame .framework li:hover .lang-box img{
+    filter: grayscale(0%);
+}
+
+.exper-frame .experince{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.exper-frame .experince::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100px;
+    background: url(../img/info-bg.png)left top no-repeat;
+    width: 175px;
+    height: 175px;
+}
+.exper-frame .experince .year{
+    font-size: 100px;
+    color: #ffdd40;
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.exper-frame .experince .text-exper{
+    width: 100px;
+}
+
+.footer{
+    background: #ffdd40;
+    padding: 80px 0 50px;
+}
+
+.footer a{
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    font-size: 52px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.footer .footer-para{
+    font-size: 20px;
+}
+
+.footer .footer-para a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+@media(max-width:991px){
+    .header-bg h1 {
+        font-size: 40px;
+    }
+    .footer a{
+        font-size: 40px;
+    }
+}
+
+@media(max-width:767px){
+    .footer a{
+        font-size: 20px;
+    }
+    .exper-frame .experince{
+        justify-content: flex-start;
+        margin-bottom: 30px;
+    }
+    .exper-frame .experince::before{
+        left: 0;
+        right: auto;
+    }
+    .footer .footer-para{
+        font-size: 14px;
+    }
+    .footer .footer-para a{
+        font-size: 14px;
+    }
+}
